@@ -111,14 +111,14 @@
             color: #333;
             transition: color 0.3s ease;
         }
-        .container {
- exibição: grade;
- colunas de modelo de grade: repetição (ajuste automático, minmax (280px, 1fr));
- Lacuna: 30px;
- preenchimento: 40px;
- largura: 100%;
- largura máxima: 1200px;
 
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            width: 100%;
+            max-width: 1200px;
         }
 
         .card {
