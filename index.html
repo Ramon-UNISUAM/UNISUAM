@@ -446,15 +446,14 @@
         }
 
         function toggleLinks(button) {
-            var card = button.closest('.card');
-            var links = card.querySelector('.show-links');
-            if (links.style.display === 'none' || links.style.display === '') {
-                links.style.display = 'flex';
-                button.style.display = 'none';
-            } else {
-                links.style.display = 'none';
-            }
-        }
+    var card = button.closest('.card');
+    var links = card.querySelector('.show-links');
+    if (links.style.display === 'none' || links.style.display === '') {
+        links.style.display = 'flex';
+    } else {
+        links.style.display = 'none';
+    }
+}
 
         function toggleDarkMode() {
             const toggleButton = document.getElementById('darkModeToggle');
