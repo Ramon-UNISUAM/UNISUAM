@@ -450,8 +450,12 @@
     var links = card.querySelector('.show-links');
     if (links.style.display === 'none' || links.style.display === '') {
         links.style.display = 'flex';
+        button.textContent = 'Fechar';
+        button.style.backgroundColor = '#0f96ae';
     } else {
         links.style.display = 'none';
+        button.textContent = 'Veja o seu link!';
+        button.style.backgroundColor = '#3b5998';
     }
 }
 
